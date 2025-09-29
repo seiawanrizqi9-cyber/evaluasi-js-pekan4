@@ -7,6 +7,7 @@ Aplikasi ini dirancang untuk menjadi portofolio yang menunjukkan kemampuan dalam
 Url website: https://evaluasi-js-pekan4.vercel.app/
 Url github: https://github.com/seiawanrizqi9-cyber/evaluasi-js-pekan4
 Link File Presentasi: https://www.canva.com/design/DAG0VNyZQ8U/4NoXkrjzNJ6S_pbpGf-9JQ/edit
+Link video: https://youtu.be/aOULo8JTOyw
 
 ---
 
