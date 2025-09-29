@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waroeng Digital</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body class="light-theme">
+    <div id="loadingScreen" class="loading-screen hidden">
+      <div class="loading-content">
+        <div class="loading-spinner"></div>
+        <h3>Loading Waroeng Digital...</h3>
+      </div>
+    </div>
+
+    <div id="loginContainer" class="login-container">
+      <form id="loginForm" class="login-form">
+        <h2><i class="fas fa-utensils"></i> Waroeng Digital</h2>
+
+        <!-- Tab untuk Login/Register -->
+        <div class="auth-tabs">
+          <button type="button" id="loginTab" class="auth-tab active">
+            Login
+          </button>
+          <button type="button" id="registerTab" class="auth-tab">
+            Daftar
+          </button>
+        </div>
+
+        <div class="form-group" id="usernameGroup" style="display: none">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="form-group">
+          <label for="userType">Tipe User</label>
+          <select id="userType" name="userType" required>
+            <option value="">Pilih Tipe User</option>
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+          </select>
+        </div>
+        <button type="submit" class="login-btn" id="authButton">Masuk</button>
+        <div id="errorMessage" class="error-message"></div>
+      </form>
+    </div>
+
+    <div id="mainApp" class="main-app hidden">
+      <nav class="navbar">
+        <div class="navbar-content">
+          <div class="logo">
+            <i class="fas fa-utensils"></i> Waroeng Digital
+          </div>
+          <ul class="nav-menu" id="navMenu"></ul>
+          <div class="nav-controls">
+            <button id="themeToggle" class="theme-toggle">
+              <i class="fas fa-sun"></i>
+            </button>
+            <span id="userWelcome" class="user-welcome"></span>
+            <button id="logoutBtn" class="logout-btn">Keluar</button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div id="contentArea"></div>
+      </div>
+
+      <div id="shoppingSidebar" class="shopping-sidebar hidden">
+        <div class="sidebar-header">
+          <h3><i class="fas fa-shopping-cart"></i> Pesanan Anda</h3>
+          <button id="closeSidebar" class="close-btn">&times;</button>
+        </div>
+        <div id="cartItems" class="cart-items"></div>
+        <div class="cart-summary">
+          <div class="total-price">
+            <strong>Total: Rp <span id="totalPrice">0</span></strong>
+          </div>
+          <button id="checkoutBtn" class="checkout-btn">
+            <i class="fas fa-credit-card"></i> Checkout
+          </button>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Waroeng Digital</h4>
+            <p>Menyajikan cita rasa autentik Indonesia</p>
+          </div>
+          <div class="footer-section">
+            <h4>Kontak</h4>
+            <p><i class="fab fa-instagram"></i> @waroengdigital</p>
+            <p><i class="fab fa-whatsapp"></i> +62 812-3456-7890</p>
+            <p><i class="fas fa-envelope"></i> info@waroengdigital.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Waroeng Digital. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
