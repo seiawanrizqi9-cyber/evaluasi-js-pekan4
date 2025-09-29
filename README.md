@@ -4,7 +4,7 @@
 
 Aplikasi ini dirancang untuk menjadi portofolio yang menunjukkan kemampuan dalam membangun aplikasi web modern dari dasar, mencakup manajemen state, routing sisi klien, otentikasi, dan manipulasi DOM secara dinamis.
 
- <!-- Ganti URL ini dengan screenshot aplikasi Anda -->
+ Url website: https://evaluasi-js-pekan4.vercel.app/
 
 ---
 
